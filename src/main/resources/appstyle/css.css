@@ -1,0 +1,52 @@
+#anchorPane {
+    -fx-background-color: linear-gradient(from 0% 0% to 100% 100%, #DDA0DD, #BA55D3, #9370DB);
+}
+
+.button {
+    -fx-background-color: linear-gradient(from 0% 0% to 100% 100%, #FFFACD, #FFD700);
+    -fx-background-radius: 30;
+    -fx-background-insets: 0;
+    -fx-text-fill: #333333;
+    -fx-font-size: 14px;
+    -fx-font-family: "Comic Sans MS";
+    -fx-font-weight: bold;
+    -fx-padding: 10 20 10 20;
+}
+
+.button:hover {
+    -fx-background-color: linear-gradient(from 0% 0% to 100% 100%, #FFEF82, #FFDA44);
+    -fx-background-radius: 30;
+    -fx-background-insets: 0;
+    -fx-cursor: hand;
+}
+
+.radio-button {
+    -fx-text-fill: #333333;
+    -fx-font-size: 14px;
+    -fx-font-family: "Comic Sans MS";
+    -fx-font-weight: bold;
+    -fx-padding: 5 10 5 10;
+}
+
+.radio-button .radio {
+    -fx-background-color: white, linear-gradient(#E0E0E0, #A9A9A9);
+    -fx-background-radius: 50%;
+    -fx-padding: 5;
+    -fx-border-color: #A9A9A9;
+    -fx-border-width: 2;
+    -fx-border-radius: 50%;
+}
+
+.radio-button:selected .radio {
+    -fx-background-color: linear-gradient(#FFEB3B, #FFC107);
+    -fx-border-color: #FFA000;
+}
+
+.radio-button:hover .radio {
+    -fx-border-color: #FFB300;
+    -fx-cursor: hand;
+}
+
+.radio-button:focused .radio {
+    -fx-effect: dropshadow(gaussian, rgba(255, 193, 7, 0.8), 4, 0.0, 0, 2);
+}

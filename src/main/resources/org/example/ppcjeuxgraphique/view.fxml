@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane fx:id="anchorPane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="504.0" prefWidth="716.0" stylesheets="@../../../appstyle/css.css" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.example.ppcjeuxgraphique.Controller">
+    <ImageView fx:id="imageComputer" fitHeight="210.0" fitWidth="243.0" layoutX="456.0" layoutY="236.0" pickOnBounds="true" preserveRatio="true">
+    </ImageView>
+   <ImageView fx:id="imageYou" fitHeight="210.0" fitWidth="243.0" layoutX="21.0" layoutY="266.0" pickOnBounds="true" preserveRatio="true" />
+   <Button fx:id="buttonStart" layoutX="280.0" layoutY="48.0" mnemonicParsing="false" prefHeight="60.0" prefWidth="131.0" stylesheets="@../../../appstyle/css.css" text="Start Game">
+      <font>
+         <Font name="Comic Sans MS" size="12.0" />
+      </font></Button>
+   <Label layoutX="105.0" layoutY="170.0" prefHeight="38.0" prefWidth="74.0" text="You" textAlignment="CENTER">
+      <font>
+         <Font name="Comic Sans MS Bold" size="20.0" />
+      </font>
+   </Label>
+   <Label layoutX="528.0" layoutY="177.0" prefHeight="38.0" prefWidth="98.0" text="Computer" textAlignment="CENTER">
+      <font>
+         <Font name="Comic Sans MS Bold" size="20.0" />
+      </font>
+   </Label>
+   <Label fx:id="winnerLabel" layoutX="296.0" layoutY="341.0" prefHeight="60.0" prefWidth="159.0" text="Who will win?">
+      <font>
+         <Font name="Comic Sans MS Bold" size="16.0" />
+      </font>
+   </Label>
+   <Button fx:id="tryAgainButton" layoutX="280.0" layoutY="117.0" mnemonicParsing="false" prefHeight="60.0" prefWidth="131.0" stylesheets="@../../../appstyle/css.css" text="Try Again?">
+      <font>
+         <Font name="Comic Sans MS Bold" size="12.0" />
+      </font></Button>
+   <RadioButton fx:id="paperChoice" layoutX="14.0" layoutY="215.0" mnemonicParsing="false" text="Paper">
+      <font>
+         <Font name="Comic Sans MS Bold" size="12.0" />
+      </font>
+      <toggleGroup>
+         <ToggleGroup fx:id="choices" />
+      </toggleGroup>
+   </RadioButton>
+   <RadioButton fx:id="rockChoice" layoutX="91.0" layoutY="215.0" mnemonicParsing="false" text="Rock" toggleGroup="$choices">
+      <font>
+         <Font name="Comic Sans MS Bold" size="12.0" />
+      </font>
+   </RadioButton>
+   <RadioButton fx:id="scissorsChoice" layoutX="164.0" layoutY="215.0" mnemonicParsing="false" text="Scissors" toggleGroup="$choices">
+      <font>
+         <Font name="Comic Sans MS" size="12.0" />
+      </font>
+   </RadioButton>
+   <Label layoutX="105.0" layoutY="86.0" text="Wins" textFill="#f2ff00">
+      <font>
+         <Font name="Comic Sans MS Bold" size="14.0" />
+      </font>
+   </Label>
+   <Label layoutX="561.0" layoutY="86.0" text="Wins" textFill="#f2ff00">
+      <font>
+         <Font name="Comic Sans MS Bold" size="14.0" />
+      </font>
+   </Label>
+   <Label fx:id="humanWinsLabel" layoutX="117.0" layoutY="119.0" text="0" textFill="#f2ff00">
+      <font>
+         <Font name="Comic Sans MS Bold" size="14.0" />
+      </font>
+   </Label>
+   <Label fx:id="computerWinsLabel" layoutX="573.0" layoutY="119.0" text="0" textFill="#f2ff00">
+      <font>
+         <Font name="Comic Sans MS Bold" size="14.0" />
+      </font>
+   </Label>
+</AnchorPane>
